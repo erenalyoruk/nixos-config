@@ -4,6 +4,8 @@
 
   extraMonitorSettings = "";
 
+  stylixImage = ../../wallpapers/wallpaper.jpg;
+
   amdgpuBusId = "PCI:1:0:0";
   nvidiaBusId = "PCI:0:0:0";
 }
