@@ -3,11 +3,13 @@
     ./hyprland
     ./scripts
     ./neovim
+    ./rofi
     ./zsh
     ./alacritty.nix
     ./brave.nix
     ./git.nix
-    ./rofi.nix
+    ./gtk.nix
+    ./stylix.nix
     ./xdg.nix
   ];
 
