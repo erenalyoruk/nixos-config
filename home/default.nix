@@ -1,13 +1,17 @@
-_: {
+{ pkgs, ... }: {
   imports = [
     ./hyprland
     ./scripts
     ./neovim
+    ./zsh
     ./alacritty.nix
     ./brave.nix
     ./git.nix
     ./rofi.nix
     ./xdg.nix
-    ./zsh.nix
+  ];
+
+  home.packages = with pkgs; [
+    eza
   ];
 }
