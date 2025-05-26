@@ -6,6 +6,7 @@
       noto-fonts-emoji
       liberation_ttf
       nerd-fonts.jetbrains-mono
+      ubuntu_font_family
     ];
   };
 }

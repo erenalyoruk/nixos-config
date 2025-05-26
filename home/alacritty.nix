@@ -10,14 +10,6 @@
       terminal = {
         shell = "${pkgs.zsh}/bin/zsh";
       };
-
-      font = {
-        size = 11;
-        normal = {
-          family = "JetBrainsMono Nerd Font";
-	        style = "Regular";
-	      };
-      };
     };
   };
 }
