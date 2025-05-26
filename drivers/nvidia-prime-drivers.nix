@@ -21,11 +21,11 @@ in
       prime = {
         offload = {
           enable = true;
-	  enableOffloadCmd = true;
-	};
+	        enableOffloadCmd = true;
+	      };
 
-	amdgpuBusId = "${cfg.amdgpuBusId}";
-	nvidiaBusId = "${cfg.nvidiaBusId}";
+	      amdgpuBusId = "${cfg.amdgpuBusId}";
+	      nvidiaBusId = "${cfg.nvidiaBusId}";
       };
 
       powerManagement.finegrained = true;

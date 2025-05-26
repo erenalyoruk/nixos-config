@@ -9,14 +9,14 @@
       "$mod, l, movefocus, r"
       "$mod, k, movefocus, u"
       "$mod, j, movefocus, d"
-      
+
       "$mod SHIFT, I, togglesplit,"
       "$mod SHIFT, C, exit,"
       "$mod SHIFT, h, movewindow, l"
       "$mod SHIFT, l, movewindow, r"
       "$mod SHIFT, k, movewindow, u"
       "$mod SHIFT, j, movewindow, d"
-      
+
       "$mod ALT, h, swapwindow, l"
       "$mod ALT, l, swapwindow, r"
       "$mod ALT, k, swapwindow, u"

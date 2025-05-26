@@ -7,20 +7,20 @@ in
   wayland.windowManager.hyprland = {
     enable = true;
     package = pkgs.hyprland;
-    
+
     systemd = {
       enable = true;
       enableXdgAutostart = true;
       variables = [ "--all" ];
     };
-    
+
     xwayland.enable = true;
-    
+
     settings = {
       input = {
         kb_layout = "us";
         kb_options = [
-          "grp:win_space_toggle"  
+          "grp:win_space_toggle"
         ];
         numlock_by_default = true;
         repeat_delay = 300;

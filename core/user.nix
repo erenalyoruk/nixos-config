@@ -15,8 +15,8 @@ in
       imports = [ ./../home ];
       home = {
         username = "${username}";
-	homeDirectory = "/home/${username}";
-	stateVersion = "24.11";
+	      homeDirectory = "/home/${username}";
+	      stateVersion = "24.11";
       };
     };
   };
