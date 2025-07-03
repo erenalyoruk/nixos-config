@@ -16,7 +16,7 @@ in
       home = {
         username = "${username}";
 	      homeDirectory = "/home/${username}";
-	      stateVersion = "24.11";
+	      stateVersion = "25.05";
       };
     };
   };
@@ -27,6 +27,8 @@ in
     description = "${gitUsername}";
     extraGroups = [
       "networkmanager"
+      "docker"
+      "libvirtd"
       "wheel"
     ];
     shell = pkgs.zsh;

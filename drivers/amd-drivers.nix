@@ -9,6 +9,8 @@ in
   };
 
   config = mkIf cfg.enable {
+    services.xserver.videoDrivers = [ "amdgpu" ];
+
     boot.initrd.kernelModules = [ "amdgpu" ];
 
     hardware.graphics = {
