@@ -14,5 +14,6 @@
     vulkan-headers
     vulkan-extension-layer
     vulkan-validation-layers
+    vcpkg
   ];
 }
