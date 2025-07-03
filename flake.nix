@@ -10,8 +10,8 @@
   outputs = { nixpkgs, ... } @ inputs:
   let
     system = "x86_64-linux";
-    host = "desktop";
-    profile = "nvidia";
+    host = "victus";
+    profile = "nvidia-prime";
     username = "eren";
   in
   {
@@ -26,6 +26,20 @@
         };
         modules = [
           ./profiles/nvidia
+          ./hosts/${host}
+          ./core
+        ];
+      };
+      victus = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = {
+          inherit inputs;
+          inherit host;
+	        inherit profile;
+          inherit username;
+        };
+        modules = [
+          ./profiles/nvidia-prime
           ./hosts/${host}
           ./core
         ];

@@ -57,16 +57,19 @@ in
 
       cursor = {
         sync_gsettings_theme = true;
-        no_hardware_cursors = 2;
+        no_hardware_cursors = 0;
+        default_monitor = [ "DP-1" "eDP-1" ];
         enable_hyprcursor = false;
         warp_on_change_workspace = 2;
         no_warps = true;
       };
 
       render = {
-        explicit_sync = 1;
-        explicit_sync_kms = 1;
         direct_scanout = 0;
+      };
+
+      opengl = {
+        nvidia_anti_flicker = false;
       };
 
       env = [
