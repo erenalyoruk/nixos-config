@@ -10,13 +10,21 @@ in
     package = pkgs.git;
     userName = "${gitUsername}";
     userEmail = "${gitEmail}";
-    
+
     lfs = {
       enable = true;
       skipSmudge = true;
     };
 
     extraConfig = {
+      push.default = "simple";
+      merge.conflictStyle = "diff3";
+
+      log = {
+        decorate = "full";
+        date = "iso";
+      };
+
       core = {
         editor = "neovim";
       };
